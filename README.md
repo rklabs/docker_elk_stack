@@ -18,5 +18,5 @@ Then navigate on the site (port 80, source: https://github.com/sbilly/joli-admin
 
 ## Index management with curator
 ```
-  docker run --network dockerelkstack_logging --link elastic:elasticsearch -v "$PWD/curator/config":/config --rm bobrik/curator:4.0.4 --config /config/config.yml /config/actions.yml
+  docker run --network docker_elk_stack_logging --link elastic:elasticsearch -v "$PWD/curator/config":/config --rm bobrik/curator:4.0.4 --config /config/config.yml /config/actions.yml
 ```
